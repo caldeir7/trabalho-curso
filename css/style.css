@@ -1,0 +1,186 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 15px;
+}
+
+body{
+    background-color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+img{
+    max-width: 100%;
+}
+
+/* CSS Reset */
+
+body, h1, h2,figcaption, p{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+}
+
+
+header{
+    text-transform: uppercase;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    border: 3px;
+    padding: 5px;
+}
+
+nav a{
+    color: black;
+    font-size: 1.1rem;
+}
+
+nav h2{
+    text-align: right;
+}
+
+nav h2 a{
+    color: black;
+    font-size: 1.1rem;
+    display: inline-block;
+    padding: 1rem;
+
+}
+
+nav h2 a:focus,
+nav h2 a:hover
+#links-menu a:hover
+#links-menu a:focus{
+    background-color: gainsboro;
+    padding: 5px;
+}
+
+#links-menu{
+    display: none;
+    padding: 0;
+    margin: 0;
+}
+
+#links-menu a{
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #fff;
+    display: flex;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+#links-menu.aberto{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    left: 0;
+    width: 100%;
+}
+
+
+.container-lim{
+    max-width: 1100px;
+    margin: auto;
+    width: 95%;
+
+}
+main{
+    background-color: rgba(182, 181, 181, 0.04);
+    flex: 1;
+    padding: 2px;
+}
+
+article h2{
+    text-align: center;
+    padding: 10px;
+}
+
+article p{
+    font-size: 1.1rem;
+    text-align: justify;
+    padding: 10px;
+}
+article .img{
+    text-align: center;
+}
+
+
+
+footer{
+    background-color: black;
+    height: 80px;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ucs{
+    text-align: center;
+}
+section h2{
+    padding: 5px;
+    font-size: 1.2rem;
+}
+
+section p{
+    text-align: justify;
+}
+
+figure{
+    text-align: center;
+}
+
+
+
+@media screen and (min-width: 850px){
+    html{
+        font-size: 17px;
+    }
+    nav h2{
+        display: none;
+    }
+
+    #links-menu{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    #links-menu a{
+        padding: 10px;
+    }
+    .container{
+        display: flex;
+        justify-content: space-around;
+    }
+
+
+}
